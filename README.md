@@ -1,7 +1,7 @@
 # BCSG test app
 
 ## Online demo
-- https://virgil-av.github.io/bcsgtest/bcsgtest/
+- https://virgil-av.github.io/bcsgtest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
