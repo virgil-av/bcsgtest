@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 spacer">
+      <ul class="nav nav-tabs nav-justified">
+        <li (click)="changeAuthor('Hemingway')" [class.active]="selectedAuthor === 'Hemingway'">
+          <a>Ernest Hemingway</a>
+        </li>
+        <li (click)="changeAuthor('Dickens')" [class.active]="selectedAuthor === 'Dickens'">
+          <a>Charles Dickens</a>
+        </li>
+        <li (click)="changeAuthor('Shakespeare')" [class.active]="selectedAuthor === 'Shakespeare'">
+          <a>William Shakespeare</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="inner-page-wrapper container">
+    <div class="row well" *ngFor="let book of authorDetails">
+      <div class="col-md-2">
+        <div class="text-primary">
+          <a href="{{book.trackViewUrl}}" target="_blank">
+            <strong>{{book.trackName}}</strong>
+          </a>
+        </div>
+        <div class="label label-info">
+          <span *ngIf="bookIsFree(book.price) === false">
+            {{book.price | currency:'GBP':true}}
+          </span>
+          <span *ngIf="bookIsFree(book.price) === true">
+            <strong>Free</strong>
+          </span>
+        </div>
+        <hr>
+      </div>
+      <div class="col-md-10">
+        <div class="text-justify" innerHTML="{{book.description}}"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,32 @@
+.spacer{
+  margin-bottom: 5px;
+}
+
+.inner-page-wrapper{
+  height: calc(100vh - 120px);
+  max-height: calc(100vh - 120px);
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-top: 2px;
+}
+
+@media (max-width: 600px) {
+  .inner-page-wrapper{
+    height: calc(100vh - 220px);
+    max-height: calc(100vh - 220px);
+  }
+}
+
+.inner-page-wrapper::-webkit-scrollbar {
+  -webkit-appearance: none;
+  height: 7px;
+  width: 5px;
+  background: #dfe5ed;
+  border-radius: 0
+}
+
+.inner-page-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #000
+}
