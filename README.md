@@ -1,13 +1,12 @@
 # BCSG test app
 
 ## Online demo
-
+- https://virgil-av.github.io/bcsgtest/bcsgtest/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Install on other computers
 Open Command Prompt or Power Shell cd to project folder
-- `npm install -g @angular/cli`
 - `npm install`
 
 ## Development server
